@@ -86,7 +86,7 @@ func main() {
 			message := "Hello from a private endpoint! You need to be authenticated to see this."
 			responseJSON(message, w, http.StatusOK)
 		}))))
-	http.ListenAndServe(":8080", r)
+	http.ListenAndServe(":8000", r)
 }
 
 func getPemCert(token *jwt.Token) (string, error) {
